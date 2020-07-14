@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 3</title>
+    <h1>Question 2. Write the difference between 'var', 'let', and 'const', with code example.</h1>
+</head>
+<body>
+    <script>
+        document.write ("var :");
+        document.write ("<br>");
+        document.write("var declarations are globally scoped or function scoped.");
+        document.write ("<br>");
+        document.write("var variables can be updated and re-declared within its scope.");
+        document.write ("<br>");
+        document.write("Also var variables are initialized with undefined.");
+        document.write ("<br>");
+        document.write("And var can be declared without being initialized.");
+        document.write ("<br>");
+        document.write ("<br>");
+
+        document.write ("let :");
+        document.write ("<br>");
+        document.write("let is block scoped.");
+        document.write ("<br>");
+        document.write("let variables can be updated but not re-declared.");
+        document.write ("<br>");
+        document.write("let variable is not initialized.");
+        document.write ("<br>");
+        document.write ("let can be declared without being initialized.");
+        document.write ("<br>");
+        document.write ("<br>");
+
+        document.write ("const :");
+        document.write ("<br>");
+        document.write ("const is block scoped.");
+        document.write ("<br>");
+        document.write ("const variables can neither be updated nor re-declared.");
+        document.write ("<br>");
+        document.write ("const variable is not initialized.");
+        document.write ("<br>");
+        document.write ("const should be initialized during declaration.");
+        
+
+        //EXAMPLE
+
+        // var method
+        var name = "Shubhangi"; 
+        var age = "20";
+        var languages = ["Hindi", "english"];
+        var male = false;
+        var sibling = { name:"Gauri", hobby:"dance" };
+
+        var a = name
+        console.log(a);
+
+        var b = age
+        console.log(b);
+
+        var c = languages
+        console.log(c);
+
+        var d = male
+        console.log(d);
+
+        var e = sibling
+        console.log(e);
+
+
+        // let method
+        { let name = "Neha";
+        console.log(name); // Shows name in function
+        }
+        console.log(name); // Shows var name
+
+
+        // const method
+        const country = "India";
+        console.log(country);
+
+
+    </script>
+</body>
+</html>
