@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <h1>This is assignment 3.</h1>
+        <h2>To display date in the following formats: yyyy-mm-dd , yyyy/mm/dd , dd-mm-yyyy , dd/mm/yyyy.</h2>    
+    </head> 
+
+        <body>
+
+            <script>document.write("Today is :");</script>
+
+            <p id='p1'></p>
+
+            <script>document.write("Current time is :");</script>
+
+            <p id='p2'></p>
+            
+            <script>
+
+                var today = new Date();
+                var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();    
+                document.getElementById("p1").innerHTML = date;
+
+                var today = new Date();
+                var time = today.getHours()+':'+(today.getMinutes()+1)+':'+today.getSeconds();    
+                document.getElementById("p2").innerHTML = time;
+                
+            </script>
+
+        </body>
+
+</html>
