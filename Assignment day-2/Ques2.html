@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 2</title>
+    <h1>Question 2. Explain with example the remaining method of string and array.</h1>
+</head>
+<body>
+    <p>String is written inside quotes</p>
+    <p>The Array object is used to store multiple values in a single variable</p>
+    <script>
+var name = "Shubhangi" //double quotes
+console.log(name);
+
+var city = 'Nagpur'   // single qoutes
+console.log(city); 
+
+var hobby = `Tennis`  // backticks
+console.log(hobby);
+
+console.log(`My name is ${name}. I live in ${city}. I like to play${hobby}. `);
+
+let text = "The quick brown fox jumps over the lazy dog."
+
+console.log(text.charAt(6)); //Returns the character at the specified index
+
+console.log(text.charCodeAt(6)); //Returns the Unicode of the character at the specified index
+
+console.log(text.length); // Returs number of character in string
+
+let text2 = " The dog cries."
+console.log(text.concat(text2)); //Joins two or more strings, and returns a new joined strings
+
+console.log(text.endsWith(".")); //Checks whether a string ends with specified string/characters
+
+console.log(text.indexOf("b")); //Returns the position of the first found occurrence of a specified value in a string
+
+console.log(text.toUpperCase()); //Converts a string to uppercase letters
+
+console.log(text.toLowerCase()); //Converts a string to lowercase letters
+ 
+console.log(text.substr(4, 11));// Extracts the characters from a string, beginning at a specified start position, and through the specified number of character
+
+console.log(text.substring(4, 11)); //	Extracts the characters from a string, between two specified indices
+
+console.log(text.split(" ", 9)); //	Splits a string into an array of substrings
+
+console.log(text.search("dog")); // Searches a string for a specified value, or regular expression, and returns the position of the match
+
+console.log(text.replace("fox", "lion"));//Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced
+
+console.log(text.slice(10 ,30)); //Extracts a part of a string and returns a new string
+
+
+    </script>
+    <script src="Ques2.js"></script> 
+</body>
+</html>
