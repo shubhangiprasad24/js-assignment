@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment day 3.</title>
+
+    <h2>Question 3. Write a program to take marks as input and grade him accordingly. Use conditional statements. Also the same code using switch or ternary.</h2>
+</head>
+<body>
+    <script>
+        let marks = Number(prompt(" Enter your subject 1 marks.",0));
+{
+        if (marks > 50) {
+        console.log(`Marks are ${marks} and grade is A.`)
+        }
+         
+        else if (marks == 50) {
+            console.log(`Marks are ${marks} and grade is B.`);
+        }
+
+         else  {
+            console.log(`Marks are ${marks} and grade is C.`);  
+        }  }  
+
+
+        let marks1 = Number(prompt(" Enter your subjecct 2 marks.",0));
+
+    switch(true) {
+
+  case marks1 >= 90:
+    console.log(`Marks are ${marks1} and grade is A.`); 
+    break;
+
+  case marks1 >= 80:
+    console.log(`Marks are ${marks1} and grade is B.`);
+    break;
+
+  case marks1 >= 70:
+    console.log(`Marks are ${marks1} and grade is c.`);
+    break;
+
+  case marks1 >= 60:
+    console.log(`Marks are ${marks1} and grade is D.`);
+    break;
+
+  case marks1 >= 50:
+    console.log(`Marks are ${marks1} and grade is E.`);
+    break;
+
+  default:
+    console.log(`Marks are ${marks1} and grade is F.`); 
+    break;
+}
+    </script>
+
+</body>
+</html>
