@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 4</title>
+    <h2>Question 2. An interger number grater than 1 is called a prime if it cannot be divided without a remainder by anything except 1 and itself. </br>
+        In other words, n>1 is a prime if it can't be evenly divided by anything excepy 1 and n.</br>
+        For example, 5 is a prime, because it cannot be dividedwithour the remainder by 2, 3, 4.
+        Write a code which outputs prime numbers in the interval from 2 to n.
+    </h2>
+</head>
+<body>
+    <script>
+        let n = prompt("Entter number.");
+
+nextPrime:
+for (let i = 2; i <= n; i++) { 
+
+  for (let j = 2; j < i; j++) { 
+    if (i % j == 0) continue nextPrime; 
+  }
+
+  console.log( i ); 
+}
+    </script>
+</body>
+</html>

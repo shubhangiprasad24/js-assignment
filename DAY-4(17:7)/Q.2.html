@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 4</title>
+    <h2>Question 2. Destructure the given data.</h2>
+</head>
+<body>
+    <script>
+        const student = {
+            name: "Helsinki",
+            age: 24,
+            projects: {
+                dicegame: "Two player dice game using JavaScript"
+            }
+        }
+
+// deconstruct
+        const{name, age, projects:{dicegame}} = student;
+
+        console.log(name, age, dicegame)
+    </script>
+</body>
+</html>

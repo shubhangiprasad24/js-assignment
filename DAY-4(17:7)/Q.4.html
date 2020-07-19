@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 4</title>
+    <h2>Question 4. Make a calculator in JavaScript which can do the addition, subtraction, multiplication, division, square root, percentage.</h2>
+</head>
+<body>
+    <script>
+        let num1 = +prompt("Enter first number.");
+        let num2 = +prompt("Enter second nember.");
+        console.log(`First number = ${num1}`);
+        console.log(`Second number = ${num2}`);
+        let num3 = +prompt("Choose from following: 1-addition 2-subtraction 3-multiplication 4-division 5-square root 6-percentage.",1);
+
+        if (num3 == 1) {
+            console.log(`Selected addition`); 
+        } 
+        if (num3 == 2) {
+            console.log(`Selected subtraction`); 
+        } 
+        if (num3 == 3) {
+            console.log(`Selected multiplication`); 
+        }
+        if (num3 == 4) {
+            console.log(`Selected division`); 
+        }
+        if (num3 == 5) {
+            console.log(`Selected square root`); 
+        }
+        if (num3 == 6) {
+            console.log(`Selected percentage`); 
+        }
+        
+
+
+          switch (true) {
+            
+ 	 case num3 == 1 :
+          console.log(`result=${num1+num2}`);
+ 	 	break;
+
+ 	 case num3 == 2:
+          console.log(`result=${num1-num2}`);
+ 	 	break;
+
+ 	 case num3 == 3:
+          console.log(`result=${num1*num2}`);
+ 	 	break;
+
+ 	 case num3 == 4: 
+          console.log(`result=${num1/num2}`);
+ 	 	break;
+
+      case num3 == 5:
+          console.log(`square rooot of first number =`,Math.sqrt(num1));
+          console.log(`square rooot of second number =`,Math.sqrt(num2));
+ 	 	break;
+
+ 	 case num3 == 6:
+          console.log(`result=${num1*100/num2}`);
+ 	 	break;
+
+ 	 default:
+      console.log("Wrong input. Please select from 1-6.");
+ 	 	break;
+			
+ 	 }
+
+        
+    </script>
+</body>
+</html>

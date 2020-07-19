@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 4</title>
+    <h2>Question 6. Rewrite a function using '?' or '||'. </br>
+        Write a loop which prompts for a number greater than 100. </br>If the visitor enters another number - ask them to input again. 
+        The loop must ask for a number until either the vistor enters a number greater then 100 or cancels the input / enter an empty line. </br>Here we can assume that the visitor only inputs the number. There is no need to implement a special handling for a non-numeric input in this task. </h2>
+</head>
+<body>
+    <script>
+
+       let i = +prompt("Enter number greater than 100");
+
+    console.log(i > 100  ? `Your number is ${i}`: `Please enter another number`)
+    
+        
+
+     while (i <= 100 && i) {
+     alert("Please enter number greater than 100!");
+     i = prompt("Enter number.");}
+
+
+
+    </script>
+</body>
+</html>

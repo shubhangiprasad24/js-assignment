@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 4</title>
+    <h2>Question 1. Create a loop that iterates upto 100 while outputting "fizz" at multiple of 3, "buzz" at multiple of 5 and "fizzbbuzz" at multiples of 3 and 5.</h2>
+</head>
+<body>
+    <script>
+        for(let i=1;i<=100;i++)
+        {
+            if (i%15==0){
+                console.log("fizzbuzz")
+                continue;
+                }
+            if (i%5==0){
+                console.log("buzz")
+                continue;
+                }
+            if (i%3==0){
+                console.log("fizz")
+                continue;
+            }
+            console.log(i)
+            }
+    </script>
+</body>
+</html>

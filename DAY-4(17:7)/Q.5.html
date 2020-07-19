@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 4</title>
+    <h2>Question 5. You are managing a sales department for your company, you want to reward your employees based on the sales made by them during the year.For the given criteria, log the total commision earned by him.</h2>
+</head>
+<body>
+    <script>
+      let sales = +prompt("Enter the total sales made during the year.",1000)
+      switch(true) {
+
+case sales > 20000:
+  console.log(`Commision earned is ${sales*0.1}`); 
+  break;
+
+case sales > 10000:
+  console.log(`Commision earned  is ${Math.round(sales*0.07)}`);
+  break;
+
+case sales > 5000:
+  console.log(`Commision earned  is ${sales*0.05}`);
+  break;
+
+case sales >= 0:
+  console.log(`Commision earned  is ${sales*0.02}`);
+  break;
+}
+    </script>
+</body>
+</html>

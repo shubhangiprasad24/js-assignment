@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 4</title>
+    <h2>Question 8. Replace function expression with arrow function in the given code.</h2>
+</head>
+<body>
+    <script>
+// Given fuunction expression
+
+        /*function ask(question, yes, no){
+            if (confirm(question)) (yes)
+            else (no)
+        }
+
+        ask(
+            "Do you agree?",
+            function() { alert("You agreed.");},
+            function() { alert("You canceled the execution.");},
+        )*/
+
+        
+        let ask = (question, yes, no) => 
+            confirm(question) ? yes() : no()
+            
+        
+
+        ask(
+            "Do you agree?",
+           
+            () =>  alert("You agreed."),
+           
+            () => alert("You canceled the execution."),
+        )
+
+         
+    </script>
+</body>
+</html>
