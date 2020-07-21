@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment day 5</title>
+    <h2>Question 2. </h2>
+</head>
+<body>
+    <script>
+        class User {
+            constructor(name, age, email){
+                 this.name = name;
+                 this.age = age;
+                 this.email = email;
+                 this.luCoins = 0;
+                 this.course = [];
+                 return this;
+            }
+            login(){
+                console.log(`${this.name} has logged in.`)
+                return this;
+                 }
+            logout(){
+                console.log(`${this.name} has logged out.`)
+                return this;
+                 }
+        }
+
+        let user = new User('Shubhangi', '20', 'shubhangi@gmail.com')
+        
+
+        user.login().logout()
+
+        class Moderator extends User{
+            addCoin(){
+                this.luCoins++;
+                console.log(`${this.name} has ${this.luCoins} coins.`)
+                return this;
+            }
+            removeCoin(){
+                this.luCoins--;
+                console.log(`${this.name} has ${this.luCoins} coins.`)
+                return this;
+            }
+        }
+        let mod = new Moderator(`Dilip`, `25`, `dilip@gmail.com`)
+
+        mod.addCoin().addCoin().removeCoin()
+
+         class Admin extends Moderator{
+    addCourse(user,course){
+        users.course.push(course)
+         console.log(user); 
+     }
+        deleteCourse(user){
+         users.course.pull(course)
+         console.log(user);
+     
+     }
+ }
+
+ let admin = new Admin(`Gauri`, `24`, `gp@gmail.com`)
+
+ admin.addCourse(user,'Python');
+
+
+
+    </script>
+</body>
+</html>

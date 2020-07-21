@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment day 5</title>
+    <h2>Question 1. </h2>
+</head>
+<body>
+   <script>
+        let arr = prompt("Enter any positive numbers with space.")
+        console.log(arr.split(" "));
+
+        let odd = arr.split(" ").filter(el => el%2!=0);
+        console.log(odd);
+        let cube = odd.map((el)=>el**3);
+        console.log(cube);
+    </script>
+</body>
+</html>
